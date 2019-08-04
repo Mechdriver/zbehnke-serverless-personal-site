@@ -1,0 +1,389 @@
+html body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+}
+
+.home-menu {
+  background-color: rgba(28, 1, 24, 1.0);
+  padding: 0.5em;
+}
+
+.pure-menu-horizontal {
+  width: 100%;
+  display: inline-block;
+}
+
+.pure-menu-heading {
+  text-align: left;
+  font-weight: 400;
+  font-size: 120%;
+  color: white;
+}
+
+.pure-menu-list {
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  float: right;
+}
+
+.pure-menu-list-item {
+  vertical-align: middle;
+  background-color: rgba(28, 1, 24, 1.0);
+}
+
+.pure-menu-link {
+  color: white;
+  opacity: 0.7;
+  background-color: rgba(28, 1, 24, 1.0);
+}
+
+.pure-menu-link:hover {
+  text-shadow: 0px 0px 3px white;
+  opacity: 1;
+  color: white;
+  background-color: rgba(28, 1, 24, 1.0);
+}
+
+.pure-menu-link:visited {
+  color: white;
+  background-color: rgba(28, 1, 24, 1.0);
+}
+
+.splash-container {
+  background: url(../golden-gate-night.jpg);
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 92%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  position: fixed !important
+}
+
+.splash {
+  position: absolute;
+  top: 100px;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.splash-head {
+  color: white;
+  font-size: 24px;
+  opacity: 0.85;
+}
+
+.splash-subhead {
+  color: white;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+@media (min-width: 480px) {
+  .home-menu {
+    text-align: left;
+  }
+  .splash {
+    width: 50%;
+    height: 50%;
+  }
+
+  .splash-head {
+    font-size: 32px;
+  }
+
+  .splash-subhead {
+    font-size: 30px;
+  }
+}
+
+.content-container {
+  position: absolute;
+  top: 92%;
+  width: 100%;
+  background: black;
+  height: auto;
+  z-index: 2;
+}
+
+.background-container {
+  top: 80%;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+.background-container:hover {
+  cursor: default;
+}
+
+.section-header {
+  padding-top: 2em;
+  display: block;
+  color: white;
+  opacity: 0.7;
+  font-size: 22px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.background-section {
+  height: auto;
+  font-size: 18px;
+  color: white;
+  opacity: 0.7;
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media (min-width: 480px) {
+  .background-container {
+    width: 50%;
+    height: 50%;
+  }
+
+  .section-header {
+    font-size: 32px;
+  }
+
+  .background-section {
+    font-size: 20px;
+  }
+}
+
+.interests-section {
+  top: 80%;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 10em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 3em;
+  vertical-align: middle;
+}
+
+.interest-box {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.interest-box a {
+  color: white;
+  opacity: 0.7;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.interest-box a:hover {
+  text-shadow: 0px 0px 3px white;
+  opacity: 1;
+}
+
+.interest-box i {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.interest-text {
+  color: white;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+@media (min-width: 480px) {
+  .interests-section {
+    width: 50%;
+    height: 50%;
+  }
+
+  .interest-box a {
+    font-size: 28px;
+  }
+
+  .interest-text {
+    font-size: 28px;
+  }
+}
+
+.contact-section {
+  top: 80%;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 10em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 10em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pure-form .pure-group input,
+.pure-form .pure-group textarea {
+  display: inline-block;
+}
+
+.pure-form .pure-group input:focus,
+.pure-form .pure-group textarea:focus {
+  outline: 1px;
+  border-color: white;
+}
+
+.contact-input {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid white;
+  outline-color: white;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.contact-input:focus {
+  border-color: white;
+}
+
+.message-input {
+  vertical-align: top;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid white;
+  outline-color: white;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.button-box {
+  padding-top: 2em;
+}
+
+.submit-button {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.submit-button-error {
+  background-color: red;
+  font-size: 12px;
+}
+
+.submit-button-success {
+  background-color: green;
+}
+
+@media (min-width: 480px) {
+  .contact-section {
+    width: 50%;
+    height: 50%;
+  }
+
+  .contact-input {
+    font-size: 28px;
+  }
+
+  .message-input {
+    font-size: 28px;
+  }
+
+  .submit-button-error {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  background-color: rgba(28, 1, 24, 1.0);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  z-index: 3;
+  padding: 1em;
+  color: white;
+  font-size: 14px;
+}
+
+/*Source: https://github.com/jlong/css-spinners*/
+.pulse-loader:not(:required) {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  -moz-animation: pulse-loader 0.7s linear infinite alternate;
+  -webkit-animation: pulse-loader 0.7s linear infinite alternate;
+  animation: pulse-loader 0.7s linear infinite alternate;
+  border: 2px solid ;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: 50px;
+}
+
+@-moz-keyframes pulse-loader {
+  0% {
+    -moz-box-shadow: purple 0 0 0px 20px;
+    box-shadow: purple 0 0 0px 20px;
+  }
+  40% {
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  100% {
+    -moz-box-shadow: purple 0 0 0px 25px inset;
+    box-shadow: purple 0 0 0px 25px inset;
+  }
+}
+@-webkit-keyframes pulse-loader {
+  0% {
+    -webkit-box-shadow: purple 0 0 0px 20px;
+    box-shadow: purple 0 0 0px 20px;
+  }
+  40% {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  100% {
+    -webkit-box-shadow: purple 0 0 0px 25px inset;
+    box-shadow: purple 0 0 0px 25px inset;
+  }
+}
+@keyframes pulse-loader {
+  0% {
+    -moz-box-shadow: purple 0 0 0px 20px;
+    -webkit-box-shadow: purple 0 0 0px 20px;
+    box-shadow: purple 0 0 0px 20px;
+  }
+  40% {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  100% {
+    -moz-box-shadow: purple 0 0 0px 25px inset;
+    -webkit-box-shadow: purple 0 0 0px 25px inset;
+    box-shadow: purple 0 0 0px 25px inset;
+  }
+}
