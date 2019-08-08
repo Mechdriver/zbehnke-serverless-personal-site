@@ -74,7 +74,7 @@ class ContactForm extends React.Component {
       this.displayErrors(errors);
     } else {
       globalThis.setState({loaderId: 'pulse-loader'});
-      fetch('/submit/', {
+      fetch('/api/submit', {
         method: "POST",
         body: data
       }).then(function(response) {

@@ -1,0 +1,5 @@
+{
+  "env": {
+    "DISCORD_WEBHOOK_URL": "@discord_webhook_url"
+  }
+}
