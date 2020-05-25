@@ -21,7 +21,7 @@ class Background extends React.Component {
               After a few months of anticipation I was accepted.
             </p>
             <p>
-              Before I left for college I decided to teach myself some programming. I discovered Python and attempted to write a small text based adventure game.
+              Before I left for college I decided to teach myself some programming basics. I discovered Python and attempted to write a small text based adventure game.
               Python is still one of my favorite languages and it is my top choice for projects and scripts.
             </p>
             <p>
@@ -29,8 +29,13 @@ class Background extends React.Component {
               One of my internships introduced me to embedded systems. My part time job during my Senior year introduced me to industry level software development.
             </p>
             <p>
-              After I graduated from Cal Poly I received a job offer for a company in the Bay Area. I am currently working there as a web developer.
-              My weekends are spent hiking with my girlfriend, breeding Pokémon, and tinkering with interesting JavaScript frameworks.
+              After I graduated from Cal Poly I received a job offer for Course Hero where I learned the intricacies of web development.
+              I made a lot of friends there but eventually found myself to be the only one of my friend group left.
+            <p>
+              I currently work at Nextdoor doing web development with Django and React. I have also picked up iOS development skills while on the job!
+              Right now I am having amazing experiences working with my team and more and more people are using the features that we work on every day.
+            </p>
+              Because of Covid-19, my evenings and weekends are spent playing videogames with friends, doing home workouts, and having video chats with my fiancée.
             </p>
             <p>
               If you would like to get in touch, I can be contacted through LinkedIn or through my Contact Form.

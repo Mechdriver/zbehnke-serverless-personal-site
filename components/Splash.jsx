@@ -6,7 +6,7 @@ class Splash extends React.Component {
       <div className="splash-container">
         <div className="splash">
           <h1 className="splash-head">Zachary Behnke</h1>
-          <p className="splash-subhead">I like programming, Pokémon, and power lifting.</p>
+          <p className="splash-subhead">I like programming, Pokémon, and I miss power lifting.</p>
         </div>
       </div>
     );
