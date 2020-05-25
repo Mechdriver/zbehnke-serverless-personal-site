@@ -13,7 +13,7 @@ const Home = () => (
       <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" />
       <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
-      <script src="https://use.fontawesome.com/424be27a87.js"></script>
+      <script src="https://kit.fontawesome.com/44bf84840d.js" crossorigin="anonymous"></script>
       <title>Zachary Behnke</title>
     </Head>
 

@@ -35,7 +35,6 @@ class handler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(error_dict).encode())
             return
 
-        #_send_email(name, email, message)
         _send_discord_message(name, email, message)
 
         self.send_response(200)
@@ -48,14 +47,15 @@ def _is_name_vaild(name):
     if (not name):
         return False
 
-    #Names typicall don't have numbers in them
+    # Names typically don't have numbers in them
+    # Wow. Thanks, Elon.
     if (re.search(r"[0-9]", name)):
         return False
 
     return True
 
 def _is_email_valid(email):
-    #Source: http://emailregex.com/
+    # Source: http://emailregex.com/
     if (re.search(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)", email)):
         return True
 
@@ -69,23 +69,3 @@ def _send_discord_message(name, email, message):
     response = requests.post(url=os.environ.get('DISCORD_WEBHOOK_URL'),
         data=json.dumps({'content': discord_message}),
         headers={'Content-Type': 'application/json'})
-
-def _send_email(name, email, message):
-    # Create a secure SSL context
-    context = ssl.create_default_context()
-
-    my_email = os.environ.get('GMAIL_ADDRESS')
-    my_password = os.environ.get('GMAIL_PASS')
-    email = email.strip()
-
-    email_message = MIMEText(message + "\nFrom Email: " + email)
-
-    email_message['Subject'] = 'Message from ' + name.strip() + ' via the zbehnke website.'
-    email_message['From'] = email
-    email_message['To'] = my_email
-    sender = smtplib.SMTP('smtp.gmail.com', 587)
-    sender.ehlo()
-    sender.starttls(context=context)
-    #sender.login(my_email, my_password)
-    sender.sendmail('ztbehnke62@gmail.com', [my_email], email_message.as_string())
-    sender.quit()
